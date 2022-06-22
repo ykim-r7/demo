@@ -18,7 +18,9 @@ jobs:
           base_url: ${{ secrets.base_url }}
           config_name: AWS CIS Benchmark 1.4
           scan_name: Scan on Push
-          args: src/ example.yml
+          targets:
+            - src/
+            - example.yml
       - name: Upload SARIF file
         if: always()
         uses: github/codeql-action/upload-sarif@v2

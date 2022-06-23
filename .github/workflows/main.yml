@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run mimICS
-        uses: rapid7/insightCloudSec-actions
+        uses: rapid7/insightCloudSec-actions@latest
         id: mimics
         with:
           api_key: ${{ secrets.api_key }}

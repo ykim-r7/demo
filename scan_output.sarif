@@ -39,7 +39,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": ""
+                                    "uri": "examples/ansible/playbook.yaml"
                                 }
                             }
                         }

@@ -21,7 +21,7 @@ jobs:
     # needs: get-targets
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+#       - uses: actions/checkout@v3
 #       - name: Run mimICS
 #         uses: ykim-r7/test-action@main
 #         id: mimics

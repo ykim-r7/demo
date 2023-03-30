@@ -37,8 +37,10 @@
                     },
                     "locations": [
                         {
-                            "message": {
-                                "text": "idk"
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": ""
+                                }
                             }
                         }
                     ],

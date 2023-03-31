@@ -1,0 +1,66 @@
+{
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "mimICS",
+                    "rules": [
+                        {
+                            "id": "backoffice:136",
+                            "help": {
+                                "text": "Ensure no amazon.aws.s3_bucket resource have their encryption set to \"none\""
+                            },
+                            "name": "Storage Container Without Server Side Encryption Enabled",
+                            "properties": {
+                                "r7Severity": 3,
+                                "regoRuleId": "rapid7.insights.generic.aws.storage_container_without_server_side_encryption_enabled",
+                                "security-severity": "5"
+                            },
+                            "fullDescription": {
+                                "text": "Identify storage containers that do not have Server Side Encryption enabled."
+                            },
+                            "shortDescription": {
+                                "text": "Storage Container Without Server Side Encryption Enabled"
+                            }
+                        }
+                    ],
+                    "version": "1.0.2-SNAPSHOT-8ee550a"
+                }
+            },
+            "results": [
+                {
+                    "kind": "pass",
+                    "level": "error",
+                    "ruleId": "backoffice:136",
+                    "message": {
+                        "text": "Ensure no amazon.aws.s3_bucket resource have their encryption set to \"none\""
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "."
+                                }
+                            }
+                        }
+                    ],
+                    "suppressions": [],
+                    "partialFingerprints": {
+                        "Rule": "05f8d7145f7a92729182fdb873c4e5f04ce3569e777c9984bc84bafcc5fb4366",
+                        "Sink": "0d39845b89631c54a76c0fc262ea8c6a1c1e162b898acbae7699adedaf5e575b",
+                        "Source": "cd992b867641cb101dcccd368d81e444d97cca260eb693358969c6e8d47b4ced",
+                        "Document": "e848c55cf81ff66d2194374c02e97049e733e91ec11c7fcd27888f5e9cf9b020"
+                    }
+                }
+            ],
+            "properties": {},
+            "invocations": [
+                {
+                    "executionSuccessful": true
+                }
+            ],
+            "versionControlProvenance": []
+        }
+    ],
+    "version": "2.1.0"
+}

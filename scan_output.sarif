@@ -1956,7 +1956,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:7",
                     "message": {
                         "text": "this passed!"
@@ -1980,7 +1980,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:9",
                     "message": {
                         "text": "this passed!"
@@ -2004,7 +2004,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:11",
                     "message": {
                         "text": "this passed!"
@@ -2028,7 +2028,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:13",
                     "message": {
                         "text": "this passed!"
@@ -2052,7 +2052,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:23",
                     "message": {
                         "text": "this passed!"
@@ -2076,7 +2076,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:27",
                     "message": {
                         "text": "this passed!"
@@ -2100,7 +2100,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:32",
                     "message": {
                         "text": "this passed!"
@@ -2124,7 +2124,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:34",
                     "message": {
                         "text": "this passed!"
@@ -2148,7 +2148,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:37",
                     "message": {
                         "text": "this passed!"
@@ -2172,7 +2172,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:41",
                     "message": {
                         "text": "this passed!"
@@ -2196,7 +2196,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:46",
                     "message": {
                         "text": "this passed!"
@@ -2220,7 +2220,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:54",
                     "message": {
                         "text": "this passed!"
@@ -2244,7 +2244,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:55",
                     "message": {
                         "text": "this passed!"
@@ -2268,7 +2268,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:64",
                     "message": {
                         "text": "this passed!"
@@ -2292,7 +2292,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:72",
                     "message": {
                         "text": "this passed!"
@@ -2316,7 +2316,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:90",
                     "message": {
                         "text": "this passed!"
@@ -2340,7 +2340,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:102",
                     "message": {
                         "text": "this passed!"
@@ -2364,7 +2364,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:106",
                     "message": {
                         "text": "this passed!"
@@ -2388,7 +2388,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:107",
                     "message": {
                         "text": "this passed!"
@@ -2412,7 +2412,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:117",
                     "message": {
                         "text": "this passed!"
@@ -2436,7 +2436,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:120",
                     "message": {
                         "text": "this passed!"
@@ -2460,7 +2460,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:128",
                     "message": {
                         "text": "this passed!"
@@ -2484,7 +2484,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:132",
                     "message": {
                         "text": "this passed!"
@@ -2508,7 +2508,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:136",
                     "message": {
                         "text": "this passed!"
@@ -2532,7 +2532,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:141",
                     "message": {
                         "text": "this passed!"
@@ -2556,7 +2556,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:165",
                     "message": {
                         "text": "this passed!"
@@ -2580,7 +2580,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:168",
                     "message": {
                         "text": "this passed!"
@@ -2604,7 +2604,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:172",
                     "message": {
                         "text": "this passed!"
@@ -2628,7 +2628,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:173",
                     "message": {
                         "text": "this passed!"
@@ -2652,7 +2652,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:238",
                     "message": {
                         "text": "this passed!"
@@ -2676,7 +2676,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:239",
                     "message": {
                         "text": "this passed!"
@@ -2700,7 +2700,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:282",
                     "message": {
                         "text": "this passed!"
@@ -2724,7 +2724,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:284",
                     "message": {
                         "text": "this passed!"
@@ -2748,7 +2748,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:285",
                     "message": {
                         "text": "this passed!"
@@ -2772,7 +2772,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:291",
                     "message": {
                         "text": "this passed!"
@@ -2796,7 +2796,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:295",
                     "message": {
                         "text": "this passed!"
@@ -2820,7 +2820,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:296",
                     "message": {
                         "text": "this passed!"
@@ -2844,7 +2844,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:328",
                     "message": {
                         "text": "this passed!"
@@ -2868,7 +2868,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:334",
                     "message": {
                         "text": "this passed!"
@@ -2892,7 +2892,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:345",
                     "message": {
                         "text": "this passed!"
@@ -2916,7 +2916,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:350",
                     "message": {
                         "text": "this passed!"
@@ -2940,7 +2940,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:351",
                     "message": {
                         "text": "this passed!"
@@ -2964,7 +2964,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:382",
                     "message": {
                         "text": "this passed!"
@@ -2988,7 +2988,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:406",
                     "message": {
                         "text": "this passed!"
@@ -3012,7 +3012,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:407",
                     "message": {
                         "text": "this passed!"
@@ -3036,7 +3036,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:409",
                     "message": {
                         "text": "this passed!"
@@ -3060,7 +3060,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:445",
                     "message": {
                         "text": "this passed!"
@@ -3084,7 +3084,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:446",
                     "message": {
                         "text": "this passed!"
@@ -3108,7 +3108,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:460",
                     "message": {
                         "text": "this passed!"
@@ -3132,7 +3132,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:466",
                     "message": {
                         "text": "this passed!"
@@ -3156,7 +3156,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:468",
                     "message": {
                         "text": "this passed!"
@@ -3180,7 +3180,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:469",
                     "message": {
                         "text": "this passed!"
@@ -3204,7 +3204,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:505",
                     "message": {
                         "text": "this passed!"
@@ -3228,7 +3228,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:507",
                     "message": {
                         "text": "this passed!"
@@ -3252,7 +3252,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:527",
                     "message": {
                         "text": "this passed!"
@@ -3276,7 +3276,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:528",
                     "message": {
                         "text": "this passed!"
@@ -3300,7 +3300,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:529",
                     "message": {
                         "text": "this passed!"
@@ -3324,7 +3324,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:536",
                     "message": {
                         "text": "this passed!"
@@ -3348,7 +3348,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:563",
                     "message": {
                         "text": "this passed!"
@@ -3372,7 +3372,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:564",
                     "message": {
                         "text": "this passed!"
@@ -3396,7 +3396,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:569",
                     "message": {
                         "text": "this passed!"
@@ -3420,7 +3420,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:596",
                     "message": {
                         "text": "this passed!"
@@ -3444,7 +3444,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:598",
                     "message": {
                         "text": "this passed!"
@@ -3468,7 +3468,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:817",
                     "message": {
                         "text": "this passed!"
@@ -3492,7 +3492,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:882",
                     "message": {
                         "text": "this passed!"
@@ -3516,7 +3516,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:896",
                     "message": {
                         "text": "this passed!"
@@ -3540,7 +3540,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:897",
                     "message": {
                         "text": "this passed!"
@@ -3564,7 +3564,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:898",
                     "message": {
                         "text": "this passed!"
@@ -3588,7 +3588,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:899",
                     "message": {
                         "text": "this passed!"
@@ -3612,7 +3612,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:900",
                     "message": {
                         "text": "this passed!"
@@ -3636,7 +3636,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:901",
                     "message": {
                         "text": "this passed!"
@@ -3660,7 +3660,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:907",
                     "message": {
                         "text": "this passed!"
@@ -3684,7 +3684,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:996",
                     "message": {
                         "text": "this passed!"
@@ -3708,7 +3708,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:997",
                     "message": {
                         "text": "this passed!"
@@ -3732,7 +3732,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:998",
                     "message": {
                         "text": "this passed!"
@@ -3756,7 +3756,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:999",
                     "message": {
                         "text": "this passed!"
@@ -3780,7 +3780,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1000",
                     "message": {
                         "text": "this passed!"
@@ -3804,7 +3804,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1001",
                     "message": {
                         "text": "this passed!"
@@ -3828,7 +3828,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1002",
                     "message": {
                         "text": "this passed!"
@@ -3852,7 +3852,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1007",
                     "message": {
                         "text": "this passed!"
@@ -3876,7 +3876,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1014",
                     "message": {
                         "text": "this passed!"
@@ -3900,7 +3900,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1018",
                     "message": {
                         "text": "this passed!"
@@ -3924,7 +3924,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1019",
                     "message": {
                         "text": "this passed!"
@@ -3948,7 +3948,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1025",
                     "message": {
                         "text": "this passed!"
@@ -3972,7 +3972,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1026",
                     "message": {
                         "text": "this passed!"
@@ -3996,7 +3996,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1075",
                     "message": {
                         "text": "this passed!"
@@ -4020,7 +4020,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1092",
                     "message": {
                         "text": "this passed!"
@@ -4044,7 +4044,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1142",
                     "message": {
                         "text": "this passed!"
@@ -4068,7 +4068,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1143",
                     "message": {
                         "text": "this passed!"
@@ -4092,7 +4092,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1144",
                     "message": {
                         "text": "this passed!"
@@ -4116,7 +4116,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1145",
                     "message": {
                         "text": "this passed!"
@@ -4140,7 +4140,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1146",
                     "message": {
                         "text": "this passed!"
@@ -4164,7 +4164,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1147",
                     "message": {
                         "text": "this passed!"
@@ -4188,7 +4188,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1148",
                     "message": {
                         "text": "this passed!"
@@ -4212,7 +4212,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1149",
                     "message": {
                         "text": "this passed!"
@@ -4236,7 +4236,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1150",
                     "message": {
                         "text": "this passed!"
@@ -4260,7 +4260,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1151",
                     "message": {
                         "text": "this passed!"
@@ -4284,7 +4284,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1152",
                     "message": {
                         "text": "this passed!"
@@ -4308,7 +4308,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1153",
                     "message": {
                         "text": "this passed!"
@@ -4332,7 +4332,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1154",
                     "message": {
                         "text": "this passed!"
@@ -4356,7 +4356,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1155",
                     "message": {
                         "text": "this passed!"
@@ -4380,7 +4380,7 @@
                 },
                 {
                     "kind": "pass",
-                    "level": "none",
+                    "level": "note",
                     "ruleId": "backoffice:1179",
                     "message": {
                         "text": "this passed!"

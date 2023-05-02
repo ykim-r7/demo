@@ -797,8 +797,7 @@
                                 "resourceType": "AWS::CloudTrail::Trail"
                             }
                         }
-                    ],
-                    "suppressions": []
+                    ]
                 },
                 {
                     "ruleId": "backoffice:58",

@@ -1011,7 +1011,17 @@
                             }
                         }
                     ],
-                    "suppressions": []
+                    "suppressions": [
+                        {
+                            "kind": "external",
+                            "justification": "Ignore KMSkey",
+                            "location": {
+                                "message": {
+                                    "text": "global exception from ics"
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         }

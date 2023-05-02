@@ -1139,7 +1139,7 @@
 					"suppressions": [
 						{
                             "kind": "external",
-							"guid": "idk",
+							"status": "idk",
                             "justification": "Ignore KMSkey",
                             "location": {
                                 "message": {

@@ -1,1028 +1,1030 @@
 {
-	"version": "2.1.0",
-	"$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
-	"runs": [
-		{
-			"tool": {
-				"driver": {
-					"name": "mimICS",
-					"version": "1.2.0-SNAPSHOT-6a3489a1",
-					"rules": [
-						{
-							"id": "backoffice:1021",
-							"name": "Cloud Policy with Full Access In Use",
-							"shortDescription": {
-								"text": "Cloud Policy with Full Access In Use"
-							},
-							"fullDescription": {
-								"text": "Identify customer managed cloud policies with access to all services/resources (*:*) that are attached/in-use."
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:107",
-							"name": "Cloud Region Without Configuration Tracking Enabled",
-							"shortDescription": {
-								"text": "Cloud Region Without Configuration Tracking Enabled"
-							},
-							"fullDescription": {
-								"text": "Identify cloud regions without configuration tracking, e.g., AWS Config, enabled"
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:108",
-							"name": "Cloud Account Password Policy does not Prevent Password Reuse",
-							"shortDescription": {
-								"text": "Cloud Account Password Policy does not Prevent Password Reuse"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts with a password policy that does not properly enforce password reuse protection"
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:109",
-							"name": "API Accounting Config Storage Container Access Logging Not Enabled",
-							"shortDescription": {
-								"text": "API Accounting Config Storage Container Access Logging Not Enabled"
-							},
-							"fullDescription": {
-								"text": "Identify API Accounting Configs where the target storage container, e.g., AWS S3 Bucket, does not have access logging enabled"
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:1179",
-							"name": "Cloud Account has no Security Alternate Contact",
-							"shortDescription": {
-								"text": "Cloud Account has no Security Alternate Contact"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts that do not have a security alternate contact."
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:13",
-							"name": "Cloud User Account without MFA",
-							"shortDescription": {
-								"text": "Cloud User Account without MFA"
-							},
-							"fullDescription": {
-								"text": "Identify cloud user accounts which do not require two-factor authentication"
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:136",
-							"name": "Storage Container Without Server Side Encryption Enabled",
-							"shortDescription": {
-								"text": "Storage Container Without Server Side Encryption Enabled"
-							},
-							"fullDescription": {
-								"text": "Identify storage containers that do not have Server Side Encryption enabled."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:171",
-							"name": "Cloud Account With Active Root Account",
-							"shortDescription": {
-								"text": "Cloud Account With Active Root Account"
-							},
-							"fullDescription": {
-								"text": "Identifies AWS accounts which have a root account that has had a login within the past 14 days. "
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:2",
-							"name": "Cloud Account without Global API Accounting Config (AWS)",
-							"shortDescription": {
-								"text": "Cloud Account without Global API Accounting Config (AWS)"
-							},
-							"fullDescription": {
-								"text": "Identify Accounts Without API Accounting Config, Such as AWS CloudTrail, Enabled Across All Regions"
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:20",
-							"name": "Cloud Account without Root Account MFA Protection",
-							"shortDescription": {
-								"text": "Cloud Account without Root Account MFA Protection"
-							},
-							"fullDescription": {
-								"text": "Identify Accounts Which Still Have the Root Account Active Without Two-factor Protection."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:23",
-							"name": "Database Instance not Encrypted",
-							"shortDescription": {
-								"text": "Database Instance not Encrypted"
-							},
-							"fullDescription": {
-								"text": "Identify database instances which are not encrypted."
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:239",
-							"name": "Storage Container Not Enforcing Transit Encryption",
-							"shortDescription": {
-								"text": "Storage Container Not Enforcing Transit Encryption"
-							},
-							"fullDescription": {
-								"text": "Find storage containers that do not require secure transfer over HTTPS."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:296",
-							"name": "API Keys Not Rotated Within 90 Days",
-							"shortDescription": {
-								"text": "API Keys Not Rotated Within 90 Days"
-							},
-							"fullDescription": {
-								"text": "Identify API access keys which exceed a lifetime age of 90 days"
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:34",
-							"name": "Network without Traffic Logging",
-							"shortDescription": {
-								"text": "Network without Traffic Logging"
-							},
-							"fullDescription": {
-								"text": "Identify networks, e.g., AWS VPCs, that do not have network logging enabled."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:393",
-							"name": "Access Analyzer Not Enabled In Cloud Region (AWS)",
-							"shortDescription": {
-								"text": "Access Analyzer Not Enabled In Cloud Region (AWS)"
-							},
-							"fullDescription": {
-								"text": "Identify cloud regions that do not have the Access Analyzer service enabled to help identify cross account and public access exposure via IAM policies"
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:400",
-							"name": "SSL Certificate Expired",
-							"shortDescription": {
-								"text": "SSL Certificate Expired"
-							},
-							"fullDescription": {
-								"text": "Identify SSL certificates with an expiration date that is past due."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:49",
-							"name": "API Accounting Config Log Exposed",
-							"shortDescription": {
-								"text": "API Accounting Config Log Exposed"
-							},
-							"fullDescription": {
-								"text": "Identify Storage Containers, e.g., AWS S3 buckets, that Publicly Expose API Accounting Config Logs."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:504",
-							"name": "Cloud Users With Multiple Active API Keys",
-							"shortDescription": {
-								"text": "Cloud Users With Multiple Active API Keys"
-							},
-							"fullDescription": {
-								"text": "Identify cloud users with multiple API access keys. user"
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:505",
-							"name": "Cloud Region without Default Volume Encryption",
-							"shortDescription": {
-								"text": "Cloud Region without Default Volume Encryption"
-							},
-							"fullDescription": {
-								"text": "Identify cloud regions without default volume encryption enabled."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:506",
-							"name": "Storage Container without Object Level Logging",
-							"shortDescription": {
-								"text": "Storage Container without Object Level Logging"
-							},
-							"fullDescription": {
-								"text": "Identify storage containers which do not have object level logging in place."
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:507",
-							"name": "Storage Container without Block Public Access Protection",
-							"shortDescription": {
-								"text": "Storage Container without Block Public Access Protection"
-							},
-							"fullDescription": {
-								"text": "Identify storage containers which do not have `Public Access Block Settings` enabled."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:510",
-							"name": "Cloud Account without Alarm for AWS Organizations Changes (Deprecating)",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for AWS Organizations Changes (Deprecating)"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for AWS Organizations changes made in the master AWS Account."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:511",
-							"name": "Cloud Account without Alarm for Unauthorized API Calls",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Unauthorized API Calls"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for unauthorized API calls."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:512",
-							"name": "Cloud Account without Alarm for Console Sign-in without MFA",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Console Sign-in without MFA"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for management console sign-in without MFA."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:513",
-							"name": "Cloud Account without Alarm for Usage of Root Account",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Usage of Root Account"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for usage of root account."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:514",
-							"name": "Cloud Account without Alarm for IAM Policy Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for IAM Policy Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for IAM policy changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:515",
-							"name": "Cloud Account without Alarm for API Accounting Config Configuration Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for API Accounting Config Configuration Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm exist for api accounting config changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:516",
-							"name": "Cloud Account without Alarm for Console Authentication Failures",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Console Authentication Failures"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for Management Console authentication failures."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:517",
-							"name": "Cloud Account without Alarm for Disabling/Scheduled Deletion of KMS Keys",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Disabling/Scheduled Deletion of KMS Keys"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for disabling or scheduled deletion of KMS keys."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:518",
-							"name": "Cloud Account without Alarm for Storage Container Policy Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Storage Container Policy Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for storage container IAM policy changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:519",
-							"name": "Cloud Account without Alarm for AWS Config Configuration Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for AWS Config Configuration Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a log metric filter and alarm for AWS Config configuration changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:520",
-							"name": "Cloud Account without Alarm for Access List (Security Group) Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Access List (Security Group) Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for security group changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:521",
-							"name": "Cloud Account without Alarm for Access List (NACL) Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Access List (NACL) Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for Network Access Control Lists (NACL) changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:522",
-							"name": "Cloud Account without Alarm for Network Gateway Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Network Gateway Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for Network Gateways changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:523",
-							"name": "Cloud Account without Alarm for Route Table Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Route Table Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for route table changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:524",
-							"name": "Cloud Account without Alarm for Network (VPC) Changes",
-							"shortDescription": {
-								"text": "Cloud Account without Alarm for Network (VPC) Changes"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts without a metric filter and alarm for network changes."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:54",
-							"name": "Access List Default Allows Ingress/Egress (AWS)",
-							"shortDescription": {
-								"text": "Access List Default Allows Ingress/Egress (AWS)"
-							},
-							"fullDescription": {
-								"text": "Identifies default security groups that have at least one rule permitting ingress/egress traffic"
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:58",
-							"name": "API Accounting Config Log File Validation Disabled",
-							"shortDescription": {
-								"text": "API Accounting Config Log File Validation Disabled"
-							},
-							"fullDescription": {
-								"text": "Identify API accounting configs, e.g., AWS CloudTrail, without log file validation enabled"
-							},
-							"help": {
-								"text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
-							},
-							"properties": {
-								"regoRuleId": "rapid7.insights.cfn.aws.api_accounting_config_log_file_validation_disabled",
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:62",
-							"name": "API Accounting Config not Logging",
-							"shortDescription": {
-								"text": "API Accounting Config not Logging"
-							},
-							"fullDescription": {
-								"text": "Identify API Accounting Configs, e.g., AWS CloudTrail, that are not logging all calls."
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:64",
-							"name": "Cloud User has Direct Permissions",
-							"shortDescription": {
-								"text": "Cloud User has Direct Permissions"
-							},
-							"fullDescription": {
-								"text": "Identify cloud users granted permissions directly without group/role membership."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:68",
-							"name": "API Accounting is Not Encrypted With CMK (AWS)",
-							"shortDescription": {
-								"text": "API Accounting is Not Encrypted With CMK (AWS)"
-							},
-							"fullDescription": {
-								"text": "Identify API Accounting Configs that are not encrypted with Customer Master Key (CMK)"
-							},
-							"help": {
-								"text": "Configure the KMSKeyId property of all AWS::CloudTrail::Trail resources with a KMSKey arn or alias"
-							},
-							"properties": {
-								"regoRuleId": "rapid7.insights.cfn.aws.api_accounting_is_not_encrypted_with_cmk_aws",
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:71",
-							"name": "Encryption Key not Supporting Key Rotation",
-							"shortDescription": {
-								"text": "Encryption Key not Supporting Key Rotation"
-							},
-							"fullDescription": {
-								"text": "Identify encryption keys that are not set to rotate."
-							},
-							"help": {
-								"text": "Set the EnableKeyRotation property to true for all symmetric AWS::KMS::Key resources"
-							},
-							"properties": {
-								"regoRuleId": "rapid7.insights.cfn.aws.encryption_key_not_supporting_key_rotation",
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:80",
-							"name": "Access List Exposes SSH to the Public (SG)",
-							"shortDescription": {
-								"text": "Access List Exposes SSH to the Public (SG)"
-							},
-							"fullDescription": {
-								"text": "Identify access lists/security groups exposing Port 22 to the public (0.0.0.0/0)."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:800",
-							"name": "Storage Container with MFA Delete Disabled",
-							"shortDescription": {
-								"text": "Storage Container with MFA Delete Disabled"
-							},
-							"fullDescription": {
-								"text": "Match storage containers which do not have MFA delete enabled."
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:83",
-							"name": "Cloud Account Password Policy Length too Short",
-							"shortDescription": {
-								"text": "Cloud Account Password Policy Length too Short"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts where the defined minimum password length is less than 14 characters."
-							},
-							"properties": {
-								"r7Severity": 4,
-								"security-severity": "8"
-							}
-						},
-						{
-							"id": "backoffice:85",
-							"name": "Access List Exposes Windows RDP to the Public (SG)",
-							"shortDescription": {
-								"text": "Access List Exposes Windows RDP to the Public (SG)"
-							},
-							"fullDescription": {
-								"text": "Identify access lists/security groups exposing Port 3389 to the public (0.0.0.0/0)."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:9",
-							"name": "Cloud Account Root API Access Key Present",
-							"shortDescription": {
-								"text": "Cloud Account Root API Access Key Present"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts with API access keys present on the root user account."
-							},
-							"properties": {
-								"r7Severity": 5,
-								"security-severity": "10"
-							}
-						},
-						{
-							"id": "backoffice:993",
-							"name": "Cloud Account without AWS Support Role",
-							"shortDescription": {
-								"text": "Cloud Account without AWS Support Role"
-							},
-							"fullDescription": {
-								"text": "Identify cloud accounts that do not have an AWS Support Role present"
-							},
-							"properties": {
-								"r7Severity": 2,
-								"security-severity": "2"
-							}
-						},
-						{
-							"id": "backoffice:994",
-							"name": "Cloud User without Activity in Past 45 days",
-							"shortDescription": {
-								"text": "Cloud User without Activity in Past 45 days"
-							},
-							"fullDescription": {
-								"text": "Identify cloud users that have not logged on or access an account via API in the past 45 days"
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						},
-						{
-							"id": "backoffice:995",
-							"name": "Cloud User with Unused Original API Keys",
-							"shortDescription": {
-								"text": "Cloud User with Unused Original API Keys"
-							},
-							"fullDescription": {
-								"text": "Identify cloud users that have login profiles and API keys that were created at the same time as user creation that remain unused"
-							},
-							"properties": {
-								"r7Severity": 3,
-								"security-severity": "5"
-							}
-						}
-					]
-				}
-			},
-			"invocations": [
-				{
-					"executionSuccessful": true
-				}
-			],
-			"results": [
-				{
-					"ruleId": "backoffice:58",
-					"level": "error",
-					"message": {
-						"text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
-					},
-					"locations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 5,
-									"startColumn": 5,
-									"endLine": 8,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    KMSKeyId: !Ref KMSkey\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.EncryptedCloudTrail.Properties.EnableLogFileValidation",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.EncryptedCloudTrail.Properties.EnableLogFileValidation",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail",
-								"changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -6,6 +6,7 @@\n       IsLogging: true\n       KMSKeyId: !Ref KMSkey\n       S3BucketName: !Ref S3Bucket\n+      EnableLogFileValidation: true\n   UnencryptedCloudTrail:\n     Type: AWS::CloudTrail::Trail\n     Properties:\n"
-							}
-						}
-					],
-					"partialFingerprints": {
-						"Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
-						"Rule": "66583779e9573f814becf00c8361ea2298503a3d0eacb85f660b5df56c1feb5d",
-						"Sink": "de0c206806155107dcb89980220160a2f5695941e81cf8fa3658ba36f34f2210",
-						"Source": "e564bd408b3d120a25ff11ae1ed72aef6907f11bb5976db6bde2b9f3cd305f43"
-					},
-					"relatedLocations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 5,
-									"startColumn": 5,
-									"endLine": 8,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    KMSKeyId: !Ref KMSkey\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.EncryptedCloudTrail",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.EncryptedCloudTrail",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail"
-							}
-						}
-					],
-					"suppressions": []
-				},
-				{
-					"ruleId": "backoffice:58",
-					"level": "error",
-					"message": {
-						"text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
-					},
-					"locations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 11,
-									"startColumn": 5,
-									"endLine": 13,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.UnencryptedCloudTrail.Properties.EnableLogFileValidation",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail.Properties.EnableLogFileValidation",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail",
-								"changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -11,6 +11,7 @@\n     Properties:\n       IsLogging: true\n       S3BucketName: !Ref S3Bucket\n+      EnableLogFileValidation: true\n   KMSkey:\n     Type: AWS::KMS::Key\n     Properties:\n"
-							}
-						}
-					],
-					"partialFingerprints": {
-						"Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
-						"Rule": "66583779e9573f814becf00c8361ea2298503a3d0eacb85f660b5df56c1feb5d",
-						"Sink": "d48c8de13e6eeeaa0b6a0799ddcc42285542ade5e6a520094df9732c7f69b562",
-						"Source": "d6fbc5a513c3976c3941bb1c0a27bf4e0230481e31846a676308c48cfc50d027"
-					},
-					"relatedLocations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 11,
-									"startColumn": 5,
-									"endLine": 13,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.UnencryptedCloudTrail",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail"
-							}
-						}
-					],
-					"suppressions": []
-				},
-				{
-					"ruleId": "backoffice:68",
-					"level": "error",
-					"message": {
-						"text": "Configure the KMSKeyId property of all AWS::CloudTrail::Trail resources with a KMSKey arn or alias"
-					},
-					"locations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 11,
-									"startColumn": 5,
-									"endLine": 13,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.UnencryptedCloudTrail.Properties.KMSKeyId",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail.Properties.KMSKeyId",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail",
-								"changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -11,6 +11,7 @@\n     Properties:\n       IsLogging: true\n       S3BucketName: !Ref S3Bucket\n+      KMSKeyId: \u003cKMS-KEY-ARN-OR-ALIAS\u003e\n   KMSkey:\n     Type: AWS::KMS::Key\n     Properties:\n"
-							}
-						}
-					],
-					"partialFingerprints": {
-						"Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
-						"Rule": "4c0bc45f25c50da9cff5cf816267bc322de9e6ac07d84be58b5bb5f0dc53079c",
-						"Sink": "d48c8de13e6eeeaa0b6a0799ddcc42285542ade5e6a520094df9732c7f69b562",
-						"Source": "738298f7850df34c0299e68f7b9a49c42d43cd3e1cb7abd5a95e3d9bd708be60"
-					},
-					"relatedLocations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 11,
-									"startColumn": 5,
-									"endLine": 13,
-									"endColumn": 29,
-									"snippet": {
-										"text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.UnencryptedCloudTrail",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::CloudTrail::Trail"
-							}
-						}
-					],
-					"suppressions": []
-				},
-				{
-					"ruleId": "backoffice:71",
-					"level": "error",
-					"message": {
-						"text": "Set the EnableKeyRotation property to true for all symmetric AWS::KMS::Key resources"
-					},
-					"locations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 16,
-									"startColumn": 5,
-									"endLine": 33,
-									"endColumn": 26,
-									"snippet": {
-										"text": "Properties:\n    KeyPolicy: {\"Version\": \"2012-10-17\", \"Statement\": [{\"Sid\": \"Allow CloudTrail to encrypt logs\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"cloudtrail.amazonaws.com\"}, \"Action\": [\"kms:Encrypt\", \"kms:Decrypt\", \"kms:ReEncrypt\", \"kms:GenerateDataKey*\", \"kms:DescribeKey\"], \"Resource\": \"*\"}]}\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.KMSkey.Properties.EnableKeyRotation",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.KMSkey.Properties.EnableKeyRotation",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::KMS::Key",
-								"changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -34,3 +34,4 @@\n           }\n         ]\n       }\n+      EnableKeyRotation: true\n"
-							}
-						}
-					],
-					"partialFingerprints": {
-						"Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
-						"Rule": "30bd08fc1c7962e66b4db726326fb20257a395005be2818184a932b1043d3f89",
-						"Sink": "1950540b322c7e1895d5beb51d7da9a9a2c31a290155fd85472466b762638663",
-						"Source": "618ff54eb9c0eb73a15769f776f86a9ea5907eef4ae245833b1d9d0e3f286dff"
-					},
-					"relatedLocations": [
-						{
-							"physicalLocation": {
-								"artifactLocation": {
-									"uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
-								},
-								"region": {
-									"startLine": 16,
-									"startColumn": 5,
-									"endLine": 33,
-									"endColumn": 26,
-									"snippet": {
-										"text": "Properties:\n    KeyPolicy: {\"Version\": \"2012-10-17\", \"Statement\": [{\"Sid\": \"Allow CloudTrail to encrypt logs\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"cloudtrail.amazonaws.com\"}, \"Action\": [\"kms:Encrypt\", \"kms:Decrypt\", \"kms:ReEncrypt\", \"kms:GenerateDataKey*\", \"kms:DescribeKey\"], \"Resource\": \"*\"}]}\n"
-									}
-								}
-							},
-							"logicalLocations": [
-								{
-									"name": "Resources.KMSkey",
-									"fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.KMSkey",
-									"kind": "resource"
-								}
-							],
-							"properties": {
-								"resourceType": "AWS::KMS::Key"
-							}
-						}
-					],
-					"suppressions": [
-						{
-							"kind": "external",
-							"justification": "Ignore KMSkey",
-							"status": "rejected",
-							"location": {
-								"message": "ics global exception"
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+    "version": "2.1.0",
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "mimICS",
+                    "version": "1.2.0-SNAPSHOT-6a3489a1",
+                    "rules": [
+                        {
+                            "id": "backoffice:1021",
+                            "name": "Cloud Policy with Full Access In Use",
+                            "shortDescription": {
+                                "text": "Cloud Policy with Full Access In Use"
+                            },
+                            "fullDescription": {
+                                "text": "Identify customer managed cloud policies with access to all services/resources (*:*) that are attached/in-use."
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:107",
+                            "name": "Cloud Region Without Configuration Tracking Enabled",
+                            "shortDescription": {
+                                "text": "Cloud Region Without Configuration Tracking Enabled"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud regions without configuration tracking, e.g., AWS Config, enabled"
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:108",
+                            "name": "Cloud Account Password Policy does not Prevent Password Reuse",
+                            "shortDescription": {
+                                "text": "Cloud Account Password Policy does not Prevent Password Reuse"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts with a password policy that does not properly enforce password reuse protection"
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:109",
+                            "name": "API Accounting Config Storage Container Access Logging Not Enabled",
+                            "shortDescription": {
+                                "text": "API Accounting Config Storage Container Access Logging Not Enabled"
+                            },
+                            "fullDescription": {
+                                "text": "Identify API Accounting Configs where the target storage container, e.g., AWS S3 Bucket, does not have access logging enabled"
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:1179",
+                            "name": "Cloud Account has no Security Alternate Contact",
+                            "shortDescription": {
+                                "text": "Cloud Account has no Security Alternate Contact"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts that do not have a security alternate contact."
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:13",
+                            "name": "Cloud User Account without MFA",
+                            "shortDescription": {
+                                "text": "Cloud User Account without MFA"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud user accounts which do not require two-factor authentication"
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:136",
+                            "name": "Storage Container Without Server Side Encryption Enabled",
+                            "shortDescription": {
+                                "text": "Storage Container Without Server Side Encryption Enabled"
+                            },
+                            "fullDescription": {
+                                "text": "Identify storage containers that do not have Server Side Encryption enabled."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:171",
+                            "name": "Cloud Account With Active Root Account",
+                            "shortDescription": {
+                                "text": "Cloud Account With Active Root Account"
+                            },
+                            "fullDescription": {
+                                "text": "Identifies AWS accounts which have a root account that has had a login within the past 14 days. "
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:2",
+                            "name": "Cloud Account without Global API Accounting Config (AWS)",
+                            "shortDescription": {
+                                "text": "Cloud Account without Global API Accounting Config (AWS)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify Accounts Without API Accounting Config, Such as AWS CloudTrail, Enabled Across All Regions"
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:20",
+                            "name": "Cloud Account without Root Account MFA Protection",
+                            "shortDescription": {
+                                "text": "Cloud Account without Root Account MFA Protection"
+                            },
+                            "fullDescription": {
+                                "text": "Identify Accounts Which Still Have the Root Account Active Without Two-factor Protection."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:23",
+                            "name": "Database Instance not Encrypted",
+                            "shortDescription": {
+                                "text": "Database Instance not Encrypted"
+                            },
+                            "fullDescription": {
+                                "text": "Identify database instances which are not encrypted."
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:239",
+                            "name": "Storage Container Not Enforcing Transit Encryption",
+                            "shortDescription": {
+                                "text": "Storage Container Not Enforcing Transit Encryption"
+                            },
+                            "fullDescription": {
+                                "text": "Find storage containers that do not require secure transfer over HTTPS."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:296",
+                            "name": "API Keys Not Rotated Within 90 Days",
+                            "shortDescription": {
+                                "text": "API Keys Not Rotated Within 90 Days"
+                            },
+                            "fullDescription": {
+                                "text": "Identify API access keys which exceed a lifetime age of 90 days"
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:34",
+                            "name": "Network without Traffic Logging",
+                            "shortDescription": {
+                                "text": "Network without Traffic Logging"
+                            },
+                            "fullDescription": {
+                                "text": "Identify networks, e.g., AWS VPCs, that do not have network logging enabled."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:393",
+                            "name": "Access Analyzer Not Enabled In Cloud Region (AWS)",
+                            "shortDescription": {
+                                "text": "Access Analyzer Not Enabled In Cloud Region (AWS)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud regions that do not have the Access Analyzer service enabled to help identify cross account and public access exposure via IAM policies"
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:400",
+                            "name": "SSL Certificate Expired",
+                            "shortDescription": {
+                                "text": "SSL Certificate Expired"
+                            },
+                            "fullDescription": {
+                                "text": "Identify SSL certificates with an expiration date that is past due."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:49",
+                            "name": "API Accounting Config Log Exposed",
+                            "shortDescription": {
+                                "text": "API Accounting Config Log Exposed"
+                            },
+                            "fullDescription": {
+                                "text": "Identify Storage Containers, e.g., AWS S3 buckets, that Publicly Expose API Accounting Config Logs."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:504",
+                            "name": "Cloud Users With Multiple Active API Keys",
+                            "shortDescription": {
+                                "text": "Cloud Users With Multiple Active API Keys"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud users with multiple API access keys. user"
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:505",
+                            "name": "Cloud Region without Default Volume Encryption",
+                            "shortDescription": {
+                                "text": "Cloud Region without Default Volume Encryption"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud regions without default volume encryption enabled."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:506",
+                            "name": "Storage Container without Object Level Logging",
+                            "shortDescription": {
+                                "text": "Storage Container without Object Level Logging"
+                            },
+                            "fullDescription": {
+                                "text": "Identify storage containers which do not have object level logging in place."
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:507",
+                            "name": "Storage Container without Block Public Access Protection",
+                            "shortDescription": {
+                                "text": "Storage Container without Block Public Access Protection"
+                            },
+                            "fullDescription": {
+                                "text": "Identify storage containers which do not have `Public Access Block Settings` enabled."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:510",
+                            "name": "Cloud Account without Alarm for AWS Organizations Changes (Deprecating)",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for AWS Organizations Changes (Deprecating)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for AWS Organizations changes made in the master AWS Account."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:511",
+                            "name": "Cloud Account without Alarm for Unauthorized API Calls",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Unauthorized API Calls"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for unauthorized API calls."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:512",
+                            "name": "Cloud Account without Alarm for Console Sign-in without MFA",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Console Sign-in without MFA"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for management console sign-in without MFA."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:513",
+                            "name": "Cloud Account without Alarm for Usage of Root Account",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Usage of Root Account"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for usage of root account."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:514",
+                            "name": "Cloud Account without Alarm for IAM Policy Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for IAM Policy Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for IAM policy changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:515",
+                            "name": "Cloud Account without Alarm for API Accounting Config Configuration Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for API Accounting Config Configuration Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm exist for api accounting config changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:516",
+                            "name": "Cloud Account without Alarm for Console Authentication Failures",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Console Authentication Failures"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for Management Console authentication failures."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:517",
+                            "name": "Cloud Account without Alarm for Disabling/Scheduled Deletion of KMS Keys",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Disabling/Scheduled Deletion of KMS Keys"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for disabling or scheduled deletion of KMS keys."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:518",
+                            "name": "Cloud Account without Alarm for Storage Container Policy Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Storage Container Policy Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for storage container IAM policy changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:519",
+                            "name": "Cloud Account without Alarm for AWS Config Configuration Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for AWS Config Configuration Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a log metric filter and alarm for AWS Config configuration changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:520",
+                            "name": "Cloud Account without Alarm for Access List (Security Group) Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Access List (Security Group) Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for security group changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:521",
+                            "name": "Cloud Account without Alarm for Access List (NACL) Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Access List (NACL) Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for Network Access Control Lists (NACL) changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:522",
+                            "name": "Cloud Account without Alarm for Network Gateway Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Network Gateway Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for Network Gateways changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:523",
+                            "name": "Cloud Account without Alarm for Route Table Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Route Table Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for route table changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:524",
+                            "name": "Cloud Account without Alarm for Network (VPC) Changes",
+                            "shortDescription": {
+                                "text": "Cloud Account without Alarm for Network (VPC) Changes"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts without a metric filter and alarm for network changes."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:54",
+                            "name": "Access List Default Allows Ingress/Egress (AWS)",
+                            "shortDescription": {
+                                "text": "Access List Default Allows Ingress/Egress (AWS)"
+                            },
+                            "fullDescription": {
+                                "text": "Identifies default security groups that have at least one rule permitting ingress/egress traffic"
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:58",
+                            "name": "API Accounting Config Log File Validation Disabled",
+                            "shortDescription": {
+                                "text": "API Accounting Config Log File Validation Disabled"
+                            },
+                            "fullDescription": {
+                                "text": "Identify API accounting configs, e.g., AWS CloudTrail, without log file validation enabled"
+                            },
+                            "help": {
+                                "text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
+                            },
+                            "properties": {
+                                "regoRuleId": "rapid7.insights.cfn.aws.api_accounting_config_log_file_validation_disabled",
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:62",
+                            "name": "API Accounting Config not Logging",
+                            "shortDescription": {
+                                "text": "API Accounting Config not Logging"
+                            },
+                            "fullDescription": {
+                                "text": "Identify API Accounting Configs, e.g., AWS CloudTrail, that are not logging all calls."
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:64",
+                            "name": "Cloud User has Direct Permissions",
+                            "shortDescription": {
+                                "text": "Cloud User has Direct Permissions"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud users granted permissions directly without group/role membership."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:68",
+                            "name": "API Accounting is Not Encrypted With CMK (AWS)",
+                            "shortDescription": {
+                                "text": "API Accounting is Not Encrypted With CMK (AWS)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify API Accounting Configs that are not encrypted with Customer Master Key (CMK)"
+                            },
+                            "help": {
+                                "text": "Configure the KMSKeyId property of all AWS::CloudTrail::Trail resources with a KMSKey arn or alias"
+                            },
+                            "properties": {
+                                "regoRuleId": "rapid7.insights.cfn.aws.api_accounting_is_not_encrypted_with_cmk_aws",
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:71",
+                            "name": "Encryption Key not Supporting Key Rotation",
+                            "shortDescription": {
+                                "text": "Encryption Key not Supporting Key Rotation"
+                            },
+                            "fullDescription": {
+                                "text": "Identify encryption keys that are not set to rotate."
+                            },
+                            "help": {
+                                "text": "Set the EnableKeyRotation property to true for all symmetric AWS::KMS::Key resources"
+                            },
+                            "properties": {
+                                "regoRuleId": "rapid7.insights.cfn.aws.encryption_key_not_supporting_key_rotation",
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:80",
+                            "name": "Access List Exposes SSH to the Public (SG)",
+                            "shortDescription": {
+                                "text": "Access List Exposes SSH to the Public (SG)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify access lists/security groups exposing Port 22 to the public (0.0.0.0/0)."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:800",
+                            "name": "Storage Container with MFA Delete Disabled",
+                            "shortDescription": {
+                                "text": "Storage Container with MFA Delete Disabled"
+                            },
+                            "fullDescription": {
+                                "text": "Match storage containers which do not have MFA delete enabled."
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:83",
+                            "name": "Cloud Account Password Policy Length too Short",
+                            "shortDescription": {
+                                "text": "Cloud Account Password Policy Length too Short"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts where the defined minimum password length is less than 14 characters."
+                            },
+                            "properties": {
+                                "r7Severity": 4,
+                                "security-severity": "8"
+                            }
+                        },
+                        {
+                            "id": "backoffice:85",
+                            "name": "Access List Exposes Windows RDP to the Public (SG)",
+                            "shortDescription": {
+                                "text": "Access List Exposes Windows RDP to the Public (SG)"
+                            },
+                            "fullDescription": {
+                                "text": "Identify access lists/security groups exposing Port 3389 to the public (0.0.0.0/0)."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:9",
+                            "name": "Cloud Account Root API Access Key Present",
+                            "shortDescription": {
+                                "text": "Cloud Account Root API Access Key Present"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts with API access keys present on the root user account."
+                            },
+                            "properties": {
+                                "r7Severity": 5,
+                                "security-severity": "10"
+                            }
+                        },
+                        {
+                            "id": "backoffice:993",
+                            "name": "Cloud Account without AWS Support Role",
+                            "shortDescription": {
+                                "text": "Cloud Account without AWS Support Role"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud accounts that do not have an AWS Support Role present"
+                            },
+                            "properties": {
+                                "r7Severity": 2,
+                                "security-severity": "2"
+                            }
+                        },
+                        {
+                            "id": "backoffice:994",
+                            "name": "Cloud User without Activity in Past 45 days",
+                            "shortDescription": {
+                                "text": "Cloud User without Activity in Past 45 days"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud users that have not logged on or access an account via API in the past 45 days"
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        },
+                        {
+                            "id": "backoffice:995",
+                            "name": "Cloud User with Unused Original API Keys",
+                            "shortDescription": {
+                                "text": "Cloud User with Unused Original API Keys"
+                            },
+                            "fullDescription": {
+                                "text": "Identify cloud users that have login profiles and API keys that were created at the same time as user creation that remain unused"
+                            },
+                            "properties": {
+                                "r7Severity": 3,
+                                "security-severity": "5"
+                            }
+                        }
+                    ]
+                }
+            },
+            "invocations": [
+                {
+                    "executionSuccessful": true
+                }
+            ],
+            "results": [
+                {
+                    "ruleId": "backoffice:58",
+                    "level": "error",
+                    "message": {
+                        "text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 5,
+                                    "startColumn": 5,
+                                    "endLine": 8,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    KMSKeyId: !Ref KMSkey\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.EncryptedCloudTrail.Properties.EnableLogFileValidation",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.EncryptedCloudTrail.Properties.EnableLogFileValidation",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail",
+                                "changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -6,6 +6,7 @@\n\n       IsLogging: true\n\n       KMSKeyId: !Ref KMSkey\n\n       S3BucketName: !Ref S3Bucket\n\n+      EnableLogFileValidation: true\n\n   UnencryptedCloudTrail:\n\n     Type: AWS::CloudTrail::Trail\n\n     Properties:\n"
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
+                        "Rule": "66583779e9573f814becf00c8361ea2298503a3d0eacb85f660b5df56c1feb5d",
+                        "Sink": "de0c206806155107dcb89980220160a2f5695941e81cf8fa3658ba36f34f2210",
+                        "Source": "e564bd408b3d120a25ff11ae1ed72aef6907f11bb5976db6bde2b9f3cd305f43"
+                    },
+                    "relatedLocations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 5,
+                                    "startColumn": 5,
+                                    "endLine": 8,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    KMSKeyId: !Ref KMSkey\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.EncryptedCloudTrail",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.EncryptedCloudTrail",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail"
+                            }
+                        }
+                    ],
+                    "suppressions": []
+                },
+                {
+                    "ruleId": "backoffice:58",
+                    "level": "error",
+                    "message": {
+                        "text": "Set the EnableLogFileValidation property to true for all AWS::CloudTrail::Trail resources"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 5,
+                                    "endLine": 13,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.UnencryptedCloudTrail.Properties.EnableLogFileValidation",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail.Properties.EnableLogFileValidation",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail",
+                                "changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -11,6 +11,7 @@\n\n     Properties:\n\n       IsLogging: true\n\n       S3BucketName: !Ref S3Bucket\n\n+      EnableLogFileValidation: true\n\n   KMSkey:\n\n     Type: AWS::KMS::Key\n\n     Properties:\n"
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
+                        "Rule": "66583779e9573f814becf00c8361ea2298503a3d0eacb85f660b5df56c1feb5d",
+                        "Sink": "d48c8de13e6eeeaa0b6a0799ddcc42285542ade5e6a520094df9732c7f69b562",
+                        "Source": "d6fbc5a513c3976c3941bb1c0a27bf4e0230481e31846a676308c48cfc50d027"
+                    },
+                    "relatedLocations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 5,
+                                    "endLine": 13,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.UnencryptedCloudTrail",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail"
+                            }
+                        }
+                    ],
+                    "suppressions": []
+                },
+                {
+                    "ruleId": "backoffice:68",
+                    "level": "error",
+                    "message": {
+                        "text": "Configure the KMSKeyId property of all AWS::CloudTrail::Trail resources with a KMSKey arn or alias"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 5,
+                                    "endLine": 13,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.UnencryptedCloudTrail.Properties.KMSKeyId",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail.Properties.KMSKeyId",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail",
+                                "changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -11,6 +11,7 @@\n\n     Properties:\n\n       IsLogging: true\n\n       S3BucketName: !Ref S3Bucket\n\n+      KMSKeyId: <KMS-KEY-ARN-OR-ALIAS>\n\n   KMSkey:\n\n     Type: AWS::KMS::Key\n\n     Properties:\n"
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
+                        "Rule": "4c0bc45f25c50da9cff5cf816267bc322de9e6ac07d84be58b5bb5f0dc53079c",
+                        "Sink": "d48c8de13e6eeeaa0b6a0799ddcc42285542ade5e6a520094df9732c7f69b562",
+                        "Source": "738298f7850df34c0299e68f7b9a49c42d43cd3e1cb7abd5a95e3d9bd708be60"
+                    },
+                    "relatedLocations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 11,
+                                    "startColumn": 5,
+                                    "endLine": 13,
+                                    "endColumn": 29,
+                                    "snippet": {
+                                        "text": "Properties:\n    IsLogging: true\n    S3BucketName: !Ref S3Bucket\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.UnencryptedCloudTrail",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.UnencryptedCloudTrail",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::CloudTrail::Trail"
+                            }
+                        }
+                    ],
+                    "suppressions": []
+                },
+                {
+                    "ruleId": "backoffice:71",
+                    "level": "error",
+                    "message": {
+                        "text": "Set the EnableKeyRotation property to true for all symmetric AWS::KMS::Key resources"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 16,
+                                    "startColumn": 5,
+                                    "endLine": 33,
+                                    "endColumn": 26,
+                                    "snippet": {
+                                        "text": "Properties:\n\n    KeyPolicy: {\"Version\": \"2012-10-17\",\n\"Statement\": [{\"Sid\": \"Allow CloudTrail to encrypt logs\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"cloudtrail.amazonaws.com\"}, \"Action\": [\"kms:Encrypt\", \"kms:Decrypt\", \"kms:ReEncrypt\", \"kms:GenerateDataKey*\", \"kms:DescribeKey\"], \"Resource\": \"*\"}]}\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.KMSkey.Properties.EnableKeyRotation",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.KMSkey.Properties.EnableKeyRotation",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::KMS::Key",
+                                "changes": "--- a/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n+++ b/examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml\n@@ -34,3 +34,4 @@\n\n           }\n\n         ]\n\n       }\n\n+      EnableKeyRotation: true\n"
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "Document": "7bcb2c8b2e55d81dfcb26ea9171c0710dffc8ee1bc771a7d56473667c17ed91b",
+                        "Rule": "30bd08fc1c7962e66b4db726326fb20257a395005be2818184a932b1043d3f89",
+                        "Sink": "1950540b322c7e1895d5beb51d7da9a9a2c31a290155fd85472466b762638663",
+                        "Source": "618ff54eb9c0eb73a15769f776f86a9ea5907eef4ae245833b1d9d0e3f286dff"
+                    },
+                    "relatedLocations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml"
+                                },
+                                "region": {
+                                    "startLine": 16,
+                                    "startColumn": 5,
+                                    "endLine": 33,
+                                    "endColumn": 26,
+                                    "snippet": {
+                                        "text": "Properties:\n\n    KeyPolicy: {\"Version\": \"2012-10-17\",\n\"Statement\": [{\"Sid\": \"Allow CloudTrail to encrypt logs\", \"Effect\": \"Allow\", \"Principal\": {\"Service\": \"cloudtrail.amazonaws.com\"}, \"Action\": [\"kms:Encrypt\", \"kms:Decrypt\", \"kms:ReEncrypt\", \"kms:GenerateDataKey*\", \"kms:DescribeKey\"], \"Resource\": \"*\"}]}\n"
+                                    }
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "name": "Resources.KMSkey",
+                                    "fullyQualifiedName": "examples/cloudformation/APIAccountingIsNotEncryptedWithCMK.yaml:Resources.KMSkey",
+                                    "kind": "resource"
+                                }
+                            ],
+                            "properties": {
+                                "resourceType": "AWS::KMS::Key"
+                            }
+                        }
+                    ],
+                    "suppressions": [
+                        {
+                            "kind": "external",
+                            "justification": "Ignore KMSkey",
+                            "status": "rejected",
+                            "location": {
+                                "message": {
+                                    "text": "global exception from ics"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
